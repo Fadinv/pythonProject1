@@ -17,7 +17,7 @@ class Pos(object):
 
     # Считает расстояние между двумя точками, принимает координаты (x, y) и (x1, y1)
     @staticmethod  # Статический метод (мы можем обращаться к нему как Pos.distance в любом месте)
-    def distance(xy: tuple[float, float], xy2: tuple[float, float]):
+    def distance(xy, xy2):
         return math.sqrt((xy[0] - xy2[0]) ** 2 + (xy[1] - xy2[1]) ** 2)
 
     # добавяет координату в приватные переменные __x и __y
@@ -33,7 +33,7 @@ class Pos(object):
 
     # Нужно вызвать, когда передаем around (радиус, относительно которого хватаем точки)
     # Расставляет синие и красные точки
-    def fill_points(self, xy: tuple[float, float], around: int):
+    def fill_points(self, xy, around: int):
         self.__blue_x = []
         self.__blue_y = []
         self.__red_x = []
