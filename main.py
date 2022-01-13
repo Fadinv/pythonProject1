@@ -1,5 +1,6 @@
 import math
 
+# ЗАДАНИЕ 1
 print('1 число')
 a = int(input())
 print('2 число')
@@ -21,6 +22,8 @@ res3 = - ((al + bt) / 2) - 3 * ((al - bt) / 2)
 
 print(f'Результаты кубического уравнения: 1-ый корень-{res1}, 2-ой корень-{res2} * i, 3-ий корень-{res3} * i.')
 
+
+# ЗАДАНИЕ 2
 # import numpy as np
 # import matplotlib.pyplot as plt
 #
